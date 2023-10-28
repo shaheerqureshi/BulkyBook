@@ -6,10 +6,12 @@
         <h2 class="text-primary">Create Category </h2>
         <hr/>
        </div>
+       <div asp-validation-summary="All"></div>
    
     <div class="mb-3">
         <label asp-for="name"></label>
         <input asp-for="name" class="form-control"/>
+        <span asp-validation-for="name" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label asp-for="DisplayOrder"></label>
