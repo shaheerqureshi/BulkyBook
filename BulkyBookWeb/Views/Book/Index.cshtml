@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Book>
+
+
+<div class="container">
+    <h2 class="text-primary my-1">Book List</h2>
+<table class="table my-5 table-bordered table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Book Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">No Of Pages</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach(var bk in Model)
+            {
+                <tr>
+                    <td>@bk.bId</td>
+                    <td>@bk.bName</td>
+                    <td>@bk.bAuthor</td>
+                    <td>@bk.bNoOfPages</td>
+                </tr>
+            }
+
+    </tbody>
+</table>
+</div>
